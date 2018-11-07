@@ -14,6 +14,8 @@ public class ExtractTextSimple
 {	
     public static void main( String[] args ) throws IOException
     {
+    	String texto = "Artículo 2 Bis 109 b";
+    	System.out.println("-----> Texto: " + texto.length() );
     	File file = new File("src/main/sources/regulacion.pdf");
     	PDDocument document = PDDocument.load(file);
     	PDFTextStripper pdfStripper = new PDFTextStripper();
